@@ -6,9 +6,9 @@ using std::set;
 
 template<typename TContainer>
 void print_elements(const TContainer& collection, const char* label="", const char separator=' '){
-	
+	cout << label;
 	for (auto i = collection.begin(); i != collection.end() ; ++i){
-		cout << label << (*i) << separator;
+		cout << (*i) << separator;
 	}
 
 	cout<<endl;
